@@ -9,9 +9,51 @@
 </head>
 
 <body>
-    <h1>
-        Figuras geometricas
-    </h1>
+    <header>
+        <h1>
+            Figuras geometricas
+        </h1>
+        <p>Este es el primer taller del curso práctico de JavaScript</p>
+    </header>
+    <section>
+        <h2>Calcula el área y perímetro de un cuadrado</h2>
+        <form>
+            <label for="inputCuadrado">
+                Escribe cuanto mida cada lado de tu cuadrado:
+            </label>
+            <input id="inputCuadrado" type="number" />
+            <button type="button" onclick="calcularPerimetroCuadrado()">
+                Calcular el perímetro
+            </button>
+            <button type="button" onclick="calcularAreaCuadrado()">
+                Calcular el área
+            </button>
+        </form>
+    </section>
+    <section>
+        <h2>Calcula la altura de un tríangulo isósceles</h2>
+        <form>
+            <label for="inputBase">
+                Escribe cuanto mide la base del triangulo:
+            </label>
+            <input id="inputBase" type="number" />
+
+            <label for="inputLado1">
+                Escribe cuanto mida el primer lado de tu triángulo:
+            </label>
+            <input id="inputLado1" type="number" />
+
+            <label for="inputLado2">
+                Escribe cuanto mida el segundo lado de tu triángulo:
+            </label>
+            <input id="inputLado2" type="number" />
+
+            <button type="button" onclick="calcularIsocelesAltura()">
+                Calcular la altura de tú triángulo
+            </button>
+
+        </form>
+    </section>
     <script src="./figuras.js"></script>
 </body>
 
