@@ -30,13 +30,11 @@ function calculePriceDiscount() {
 
     console.log(coupons);
 
-    const userCoupon = coupons.find(isCouponValueValid);
-
     const isCouponValueValid = function(coupon) {
         return coupon.name === coupon.value;
     };
 
-
+    const userCoupon = coupons.find(isCouponValueValid);
 
     if (!userCoupon) {
         alert("El cupón " + inputCoupon + " no es válido");
